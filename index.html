@@ -42,17 +42,487 @@
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
-   <!-- ============================================ -->
+    <!-- ============================================ -->
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+        </div>
+    </header>
+                                
+                                
 
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+        <section id="hero-492">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Welcome</span>
+                    <h1 class="cs-title">Make your circle healthy together,</h1>
+                    <p class="cs-text">
+                        Varius morbi enim nunc faucibus a. Pretium quam vulputate dignissim suspendisse. Tortor vitae purus faucibus ornare. Viverra mauris in aliquam sem fringilla ut morbi tincidunt 
+                    </p>
+                    <a href="" class="cs-button-solid">Consult Now</a>
+                </div>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/dna-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/dna.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/dna.jpg" alt="dna strand" width="1920" height="1200" aria-hidden="true">
+            </picture>
+        </section>
+                                
+                                
+
+        <!-- ============================================ -->
+        <!--                   Services                   -->
+        <!-- ============================================ -->
+
+        <section id="services-343">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Our Services</span>
+                    <h2 class="cs-title">The United Way To Find Specialist Services</h2>
+                    <p class="cs-text">
+                        At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner.jpg">
+                                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner.jpg">
+                                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                            </picture>
+                            <h3 class="cs-h3">Door Cleaning</h3>
+                            <p class="cs-item-text">
+                                We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner2.jpg">
+                                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner2.jpg">
+                                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner2.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                            </picture>
+                            <h3 class="cs-h3">Door Cleaning</h3>
+                            <p class="cs-item-text">
+                                We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner3.jpg">
+                                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner3.jpg">
+                                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner3.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                            </picture>
+                            <h3 class="cs-h3">Door Cleaning</h3>
+                            <p class="cs-item-text">
+                                We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner3.jpg">
+                                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner3.jpg">
+                                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/cleaner3.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                            </picture>
+                            <h3 class="cs-h3">Door Cleaning</h3>
+                            <p class="cs-item-text">
+                                We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                
+                                
+                                
+        <!-- ============================================ -->
+        <!--                  Timeline                    -->
+        <!-- ============================================ -->
+
+        <section id="timeline-504">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-flex">
+                        <span class="cs-topper">Better Process</span>
+                        <h2 class="cs-title">The Process of Working <span class="cs-color">With Us</span></h2>
+                    </div>
+                    <p class="cs-text">
+                        Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Vehicula ipsum a arcu cursus vitae congue mauris. Enim facilisis gravida neque convallis a cras
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <h3 class="cs-h3">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="cs-item-text">
+                            In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Cras adipiscing enim eu turpis 
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <h3 class="cs-h3">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="cs-item-text">
+                            In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Cras adipiscing enim eu turpis 
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <h3 class="cs-h3">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="cs-item-text">
+                            In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Cras adipiscing enim eu turpis 
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <h3 class="cs-h3">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="cs-item-text">
+                            In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Cras adipiscing enim eu turpis 
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                
+
+        <!-- ============================================ -->
+        <!--                  Gallery                     -->
+        <!-- ============================================ -->
+
+        <section id="gallery-42">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-flex">
+                        <span class="cs-topper">Our Portfolio</span>
+                        <h2 class="cs-title">View Our Gallery</h2>
+                    </div>
+                    <div class="cs-flex">
+                        <p class="cs-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue.
+                        </p>
+                        <a aria-label="view more pictures" href="" class="cs-link">
+                            View More
+                            <!-- SVG Arrow -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.84999C16.55 8.52999 16.01 8.75999 16.01 9.19999V11Z" fill="#14142B"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture cs-picture-1">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1-m.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg" alt="formerly dress you people outside" width="380" height="271">
+                    </picture>
+                    <picture class="cs-picture cs-picture-2">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2-m.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg" alt="formal dinner" width="380" height="271">
+                    </picture>
+                    <picture class="cs-picture cs-picture-3">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3-m.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg" alt="formerly dress you people outside" width="780" height="582">
+                    </picture>
+                    <picture class="cs-picture cs-picture-4">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4-m.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg" alt="recital" width="780" height="582">
+                    </picture>
+                    <picture class="cs-picture cs-picture-5">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5-m.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg" alt="formal evening" width="380" height="271">
+                    </picture>
+                    <picture class="cs-picture cs-picture-6">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6-m.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg" alt="formal dinner" width="380" height="271">
+                    </picture>
+                </div>
+            </div>
+        </section>
+                                
+
+        <!-- ============================================ -->
+        <!--                Side By Side                  -->
+        <!-- ============================================ -->
+
+        <section id="sbs-521">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">The Future Is Here</span>
+                    <h2 class="cs-title">Bringing Your Ideas and Innovations to Life</h2>
+                    <p class="cs-text">
+                        Vitae ultricies leo integer malesuada nunc vel. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Viverra aliquet eget sit amet tellus cras adipiscing
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/sheild.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                            Lorem Ipsum Dolor Sit Amet Consectectur
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/pencil.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                            Lorem Ipsum Dolor Sit Amet Consectectur
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/hat.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                            Lorem Ipsum Dolor Sit Amet Consectectur
+                        </li>
+                    </ul>
+                    <a href="" class="cs-button-solid">More About Us</a>
+                </div>
+                <!--Image Group-->
+                <div class="cs-image-group">
+                    <ul class="cs-stat-group">
+                        <li class="cs-stat">
+                            <span class="cs-number">200+</span>
+                            <span class="cs-desc">Lorem Ipsum Dolor Sit Amet Consectetur</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">99%</span>
+                            <span class="cs-desc">Lorem Ipsum Dolor Sit Amet Consectetur</span>
+                        </li>
+                    </ul>
+                    <!--Picture-->
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/lightbulb.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/lightbulb.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/lightbulb.jpg" alt="lightbulbs" width="630" height="461">
+                    </picture>
+                </div>
+            </div>
+        </section>             
+                                
+
+        <!-- ============================================ -->
+        <!--                Meet The Team                 -->
+        <!-- ============================================ -->
+
+        <section id="meet-team-702">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Our Expert Team</span>
+                    <h2 class="cs-title">Meet <span class="cs-color">The Team</span> Behind Our Success Story</h2>
+                    <p class="cs-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc1.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc1.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc1.jpg" alt="doctor" width="305" height="407">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Arlene MacCoy</span>
+                            <span class="cs-job">Aesthetic Expert</span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc2.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc2.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg" alt="doctor" width="305" height="407">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Arlene MacCoy</span>
+                            <span class="cs-job">Aesthetic Expert</span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc3.jpg" alt="doctor" width="305" height="407">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Arlene MacCoy</span>
+                            <span class="cs-job">Aesthetic Expert</span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc4.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc4.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fdoc4.jpg" alt="doctor" width="305" height="407">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Arlene MacCoy</span>
+                            <span class="cs-job">Aesthetic Expert</span>
+                        </div>
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid">View All Members</a>
+            </div>
+        </section>
+                                
+
+        <!-- ============================================ -->
+        <!--                  Reviews                     -->
+        <!-- ============================================ -->
+
+        <section id="reviews-566">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Our Reviews</span>
+                    <h2 class="cs-title">What Our Clients Say</h2>
+                    <p class="cs-text">
+                        Vitae ultricies leo integer malesuada nunc vel. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Viverra aliquet eget sit amet tellus cras adipiscing. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <!--Blue Quote-->
+                        <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                        <p class="cs-item-text">
+                            Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo.
+                        </p>
+                        <div class="cs-flex-group">
+                            <picture class="cs-picture">
+                                <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                            </picture>
+                            <span class="cs-name">
+                                Vera Robinson
+                                <span class="cs-job">Psychologist</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <!--Blue Quote-->
+                        <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                        <p class="cs-item-text">
+                            Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                        </p>
+                        <div class="cs-flex-group">
+                            <picture class="cs-picture">
+                                <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                            </picture>
+                            <span class="cs-name">
+                                Benjamin Norris
+                                <span class="cs-job">Business analyst</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                
+
+        <!-- ============================================ -->
+        <!--                     CTA                      -->
+        <!-- ============================================ -->
+
+        <section id="cta-697">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="cs-title">Have Doubts? Get Your Queries Solved by Our Experts</h2>
+                    <a href="" class="cs-button-solid">Get In Touch</a>
+                </div>
+            </div>
+            <!--SVG Waves Background-->
+            <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
+        </section>
+                                
 
         <!-- ============================================ -->
         <!--                   Footer                     -->
         <!-- ============================================ -->
 
-                                
+        <footer id="cs-footer-108">
+            <div class="cs-container">
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Services</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Gallery</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Contact</a>
+                    </li>
+                </ul>
+                <span class="cs-copyright">© 2022 Copyright</span>
+            </div>
+        </footer>
                                 
 
     <script defer src="/assets/js/nav.js"></script>
